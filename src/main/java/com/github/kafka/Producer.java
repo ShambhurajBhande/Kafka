@@ -17,7 +17,7 @@ public class Producer {
 
         KafkaProducer<String,String> producer=new KafkaProducer<String, String>(properties);
 
-        ProducerRecord<String,String> producerRecord=new ProducerRecord<>("first_topic","Hell000000000o World");
+        ProducerRecord<String,String> producerRecord=new ProducerRecord<>("first_topic","Hello World");
 
         producer.send(producerRecord);
         producer.flush();
