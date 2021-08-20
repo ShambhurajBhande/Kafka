@@ -1,1 +1,10 @@
-This is config file
+{
+"process": "APTIMUS",
+"correlationKeys": [
+  "jobId",
+  "taskId, actionId"
+],
+"oneToManyMapping": {
+  "jobId": "taskId"
+}
+}
